@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panduan Lengkap Teori Hubungan Internasional</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0e13;--panel:#161820;--line:#272a35;--text:#eceef4;--mute:#a0a5b5;--c:#ff5a4d;
+--realist:#ff5a4d;--liberal:#f7b731;--media:#e8c15a;--social:#2ec4b6;--critical:#9b8cff;--security:#b5e550}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Manrope,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Manrope,sans-serif;line-height:1.05;letter-spacing:-.02em}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.hero{padding:88px 0 56px;text-align:center;background:radial-gradient(ellipse at 50% 0,#26233d 0,transparent 65%)}
+.hero h1{font-size:clamp(40px,8vw,92px);font-weight:800}
+.hero h1 span{display:block;font-size:.5em;font-weight:600;color:var(--mute)}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#ff7a45,#f7b731,#7fcf8f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:22px auto 0;max-width:560px;color:var(--mute)}
+nav.bar{position:sticky;top:0;z-index:10;background:rgba(13,14,19,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.bar .wrap{display:flex;gap:8px;align-items:center;padding-top:10px;padding-bottom:10px;overflow-x:auto}
+nav button,nav input{font:inherit;font-size:14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:6px 14px;white-space:nowrap}
+nav button{cursor:pointer}
+nav button[aria-pressed=true]{background:var(--c);border-color:var(--c);color:#111;font-weight:700}
+nav input{margin-left:auto;min-width:150px}
+section.blk{padding:56px 0 8px}
+.sec-title{font-size:clamp(30px,5vw,48px);font-weight:800;margin-bottom:8px}
+.sec-sub{color:var(--mute);margin-bottom:28px;max-width:640px}
+.tl{list-style:none;padding:0;display:grid;gap:12px}
+.tl li{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start}
+.tl .n{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font:800 16px "Bricolage Grotesque";color:#111;background:var(--c)}
+.tl .b{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:10px;padding:14px 18px}
+.tl .d{font-size:13px;color:var(--c);font-weight:700}
+.tl h3{font-size:22px;margin:2px 0 4px}.tl p{color:var(--mute);font-size:15px}
+article.th{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;padding:28px;margin:0 0 28px}
+.pill{display:inline-block;font-size:13px;font-weight:700;color:var(--c);border:1px solid var(--c);border-radius:999px;padding:2px 12px;margin-bottom:12px}
+article h2{font-size:clamp(30px,5vw,50px);font-weight:800}
+.tag{margin:10px 0 20px;font-size:18px;color:var(--mute);border-left:3px solid var(--c);padding-left:14px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:24px}
+.meta div{background:#11131a;padding:12px 16px;font-size:14px}
+.meta b{display:block;color:var(--c);font-size:13px;margin-bottom:2px}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
+.two h3,.chips h3{font-size:15px;font-family:Manrope;letter-spacing:0;color:var(--mute);margin-bottom:10px}
+ol.as{list-style:none;padding:0;display:grid;gap:10px;counter-reset:a}
+ol.as li{counter-increment:a;padding-left:38px;position:relative}
+ol.as li:before{content:counter(a);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--c);color:#111;font-weight:800;font-size:13px;display:grid;place-items:center}
+.flow{display:flex;flex-direction:column;gap:6px;background:#11131a;border:1px solid var(--line);border-radius:10px;padding:16px}
+.flow div{border:1px solid var(--c);border-radius:8px;padding:8px 12px;text-align:center;font-size:14px;font-weight:600}
+.flow div:last-child{background:var(--c);color:#111}
+.flow i{font-style:normal;text-align:center;color:var(--c);line-height:1}
+.chips{margin:24px 0}.chips ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:#11131a;border:1px solid var(--line);border-radius:8px;padding:4px 12px;font-size:14px}
+.chips li:first-child{background:var(--c);border-color:var(--c);color:#111;font-weight:700}
+.qw{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+.q{background:var(--c);color:#111;border-radius:12px;padding:20px}
+.q small,.w small{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.q p{font:700 clamp(19px,2.6vw,25px)/1.25 "Bricolage Grotesque"}
+.q cite{display:block;margin-top:8px;font-size:13px;font-style:normal;font-weight:700}
+.w{border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--mute);font-size:15px}
+.w small{color:#ff8f86}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{padding:14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tbody th{color:var(--mute);font-weight:500;width:15%}
+thead th{border-top:4px solid var(--c);font-family:"Bricolage Grotesque";font-size:18px;color:var(--c)}
+.cp{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.cp div{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:12px;padding:20px}
+.cp h3{font-size:24px;color:var(--c);margin-bottom:8px}
+.case{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:16px}
+.case b{font:800 36px "Bricolage Grotesque";margin-right:12px}
+footer{padding:48px 0;color:var(--mute);font-size:14px;text-align:center}
+.hide{display:none}
+@media(max-width:760px){.two,.qw{grid-template-columns:1fr}article.th{padding:20px}.tl li{grid-template-columns:48px 1fr}.tl .n{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1><span>Panduan lengkap</span>Teori<span>Hubungan</span><em>Internasional</em></h1>
+<p>16 teori, tokoh kunci, diagram, dan kritik. Pilih satu tradisi di bawah, atau cari berdasarkan nama teori.</p>
+</div></header>
+
+<nav class="bar" aria-label="Filter teori"><div class="wrap">
+<div id="filters" style="display:flex;gap:8px"></div>
+<input id="q" type="search" placeholder="Cari teori" aria-label="Cari teori">
+</div></nav>
+
+<main class="wrap">
+<section class="blk" id="debates" style="--c:#f7b731">
+<h2 class="sec-title">Empat debat besar dalam HI</h2>
+<p class="sec-sub">Setiap teori di bawah lahir dari salah satu debat ini. Pahami lini masanya dulu, maka teori-teorinya akan lebih mudah ditempatkan.</p>
+<ol class="tl">
+<li style="--c:#ff5a4d"><span class="n">I</span><div class="b"><div class="d">1920-an sampai 1940-an</div><h3>Idealisme vs Realisme</h3><p>Dapatkah hukum dan Liga Bangsa-Bangsa menjaga perdamaian, atau politik adalah perebutan kekuasaan? Carr dan Morgenthau menyatakan realisme sebagai pemenang.</p></div></li>
+<li style="--c:#f7b731"><span class="n">II</span><div class="b"><div class="d">1950-an sampai 1960-an</div><h3>Tradisionalisme vs Behavioralisme</h3><p>Debat tentang metode: sejarah, hukum, dan penilaian (Hedley Bull) melawan pengukuran ilmiah dan data (Morton Kaplan).</p></div></li>
+<li style="--c:#2ec4b6"><span class="n">III</span><div class="b"><div class="d">1970-an sampai 1980-an</div><h3>Debat Antarparadigma</h3><p>Realisme, liberalisme, dan Marxisme bersaing menjelaskan dunia. Debat ini menyempit menjadi debat “neo-neo” antara Waltz dan Keohane.</p></div></li>
+<li style="--c:#9b8cff"><span class="n">IV</span><div class="b"><div class="d">Akhir 1980-an dan seterusnya</div><h3>Rasionalisme vs Reflektivisme</h3><p>Robert Keohane (1988) menamai perpecahan ini: teori pilihan rasional melawan pendekatan konstruktivis, kritis, feminis, dan pascakolonial.</p></div></li>
+</ol>
+</section>
+
+<section class="blk" id="theories"><h2 class="sec-title">Daftar teori</h2><div id="list"></div></section>
+
+<section class="blk" id="lenses" style="--c:#2ec4b6">
+<h2 class="sec-title">Empat lensa berdampingan</h2>
+<p class="sec-sub">Satu tabel untuk mengingat perbedaan aliran utama dalam hal aktor, anarki, dan kerja sama.</p>
+<div class="tbl"><table>
+<thead><tr><th></th><th style="--c:#ff5a4d">Realisme</th><th style="--c:#f7b731">Liberalisme</th><th style="--c:#2ec4b6">Konstruktivisme</th><th style="--c:#9b8cff">Kritis</th></tr></thead>
+<tbody>
+<tr><th>Aktor utama</th><td>Negara</td><td>Negara, perusahaan, institusi</td><td>Negara dan masyarakat</td><td>Kelas, kelompok, pihak yang dimarginalkan</td></tr>
+<tr><th>Makna anarki</th><td>Self-help dan rasa takut</td><td>Masalah yang dapat diredakan institusi</td><td>Apa yang negara buat darinya</td><td>Penutup bagi hierarki tersembunyi</td></tr>
+<tr><th>Penggerak perilaku</th><td>Kekuasaan dan kelangsungan hidup</td><td>Kepentingan dan saling ketergantungan</td><td>Identitas dan norma</td><td>Struktur ekonomi dan sosial</td></tr>
+<tr><th>Kerja sama</th><td>Sulit dan rapuh</td><td>Mungkin dan bertahan lama</td><td>Bergantung pada identitas bersama</td><td>Dibentuk oleh siapa yang memegang kuasa</td></tr>
+<tr><th>Tokoh kunci</th><td>Morgenthau, Waltz</td><td>Kant, Keohane</td><td>Wendt</td><td>Cox, Wallerstein</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="blk" id="cpec" style="--c:#2ec4b6">
+<h2 class="sec-title">Satu kasus, empat lensa</h2>
+<p class="sec-sub">Baca Koridor Ekonomi China-Pakistan (CPEC) melalui teori yang berbeda. Setiap lensa melihat sesuatu yang terlewat oleh lensa lain.</p>
+<div class="case"><b>CPEC</b>Diluncurkan pada 2015 sebagai proyek unggulan Belt and Road Initiative milik China.</div>
+<div class="cp">
+<div style="--c:#ff5a4d"><h3>Realisme</h3>Kemitraan strategis yang memperkuat keamanan kedua negara dan akses ke Laut Arab.</div>
+<div style="--c:#f7b731"><h3>Liberalisme</h3>Perdagangan, investasi, dan konektivitas menciptakan saling ketergantungan yang menguntungkan hubungan stabil.</div>
+<div style="--c:#2ec4b6"><h3>Konstruktivisme</h3>Identitas bersama sebagai “sahabat segala cuaca” membangun kepercayaan dan komitmen jangka panjang.</div>
+<div style="--c:#9b8cff"><h3>Dependensi</h3>Berfokus pada syarat investasi, alih teknologi, dan pertumbuhan industri lokal.</div>
+</div>
+</section>
+</main>
+<footer>Panduan belajar Hubungan Internasional. Ubah isi dengan mengedit array <code>THEORIES</code> di dalam file ini.</footer>
+
+<script>
+const GROUPS={all:"Semua",realist:"Realis",liberal:"Liberal",media:"Via media",social:"Teori sosial",critical:"Kritis",security:"Studi keamanan"};
+const LABEL={realist:"Tradisi Realis",liberal:"Tradisi Liberal",media:"Via media",social:"Teori sosial",critical:"Pendekatan kritis",security:"Studi keamanan"};
+// Edit atau tambah teori di sini. t = kunci kelompok (realist, liberal, media, social, critical, security)
+const THEORIES=[
+{n:"Realisme Klasik",t:"realist",tag:"Politik antarbangsa adalah **perebutan kekuasaan** yang berakar pada sifat manusia.",
+th:"Thucydides, Machiavelli, Hobbes, E. H. Carr, Hans Morgenthau, Reinhold Niebuhr",w:"The Twenty Years’ Crisis (Carr, 1939); Politics Among Nations (Morgenthau, 1948)",e:"Berakar dari zaman kuno; dominan 1940-an sampai 1970-an",
+a:["Sifat manusia itu **egois dan haus kekuasaan**, dan dorongan ini membentuk perilaku negara.","**Negara** adalah aktor utama dalam politik dunia.","Kepentingan nasional didefinisikan **dalam kerangka kekuasaan**.","Moralitas universal tidak bisa langsung memandu tindakan negara; **kehati-hatian (prudence)** adalah kebajikan politik tertinggi."],
+f:["Sifat manusia","Negara","Perebutan kekuasaan","Keseimbangan kekuatan"],
+k:["Animus Dominandi","Kepentingan Nasional","Balance of Power","Prudence","Enam Prinsip"],
+ql:"Kutipan klasik",q:"“Politik internasional, seperti semua politik, adalah perebutan kekuasaan.”",qb:"Hans J. Morgenthau",
+x:"Sifat manusia tidak dapat diuji, sehingga teori ini banyak menjelaskan tetapi sedikit meramalkan. Teori ini juga mengabaikan ekonomi, institusi, dan aktor non-negara."},
+{n:"Neorealisme",t:"realist",tag:"**Struktur** sistem internasional, bukan sifat manusia, yang menggerakkan perilaku negara.",
+th:"Kenneth Waltz; disebut juga Realisme Struktural",w:"Man, the State and War (1959); Theory of International Politics (1979)",e:"1979 dan seterusnya",
+a:["Sistemnya **anarkis**: tidak ada pemerintah dunia di atas negara.","Negara bersifat **seperti unit** yang menjalankan fungsi sama; mereka hanya berbeda dalam kapabilitas.","**Kelangsungan hidup** adalah tujuan pertama setiap negara, sehingga masing-masing harus mengandalkan self-help.","**Distribusi kapabilitas** (polaritas) membentuk hasil; Waltz menilai bipolaritas paling stabil."],
+f:["Anarki: tanpa pemerintah dunia","Self-help dan kelangsungan hidup","Polaritas: uni-, bi-, atau multipolar"],
+k:["Anarki","Self-help","Polaritas","Dilema Keamanan","Keuntungan Relatif","Tiga Level Analisis"],
+ql:"Kutipan klasik",q:"“Self-help pasti menjadi prinsip tindakan dalam tatanan yang anarkis.”",qb:"Kenneth Waltz, 1979",
+x:"Teori ini sulit menjelaskan perubahan, seperti berakhirnya Perang Dingin secara damai, dan mengabaikan politik domestik, pemimpin, dan gagasan."},
+{n:"Realisme Ofensif vs Defensif",t:"realist",tag:"Dua cabang realisme struktural yang sepakat soal anarki tetapi berbeda soal **seberapa besar kekuasaan** yang harus dicari negara.",
+th:"Defensif: Waltz, Jervis, Walt, Van Evera. Ofensif: John Mearsheimer",w:"The Origins of Alliances (Walt, 1987); The Tragedy of Great Power Politics (Mearsheimer, 2001)",e:"1980-an dan seterusnya",
+a:["**Kesamaan:** keduanya menerima anarki, negara sebagai aktor utama, dan kelangsungan hidup sebagai motif inti.","**Realis defensif** berpendapat negara mencari keamanan: kekuasaan secukupnya agar aman. Ekspansi biasanya merugikan diri sendiri karena memancing negara lain menyeimbangkan.","**Realis ofensif** berpendapat negara mencari hegemoni: kekuasaan relatif sebesar mungkin, dan ekspansi rasional selama manfaatnya melebihi biayanya.","Gagasan kunci: **balance of threat** (negara menyeimbangkan terhadap ancaman, bukan hanya kekuasaan) versus **hegemoni regional** (hegemoni global terhalang oleh stopping power of water)."],
+f:["Anarki dan motif bertahan hidup","Seberapa banyak kekuasaan cukup?","Defensif: kekuasaan “secukupnya”","Ofensif: kekuasaan maksimum"],
+k:["Pemaksimal Keamanan","Pemaksimal Kekuasaan","Balance of Threat","Hegemoni Regional"],
+ql:"Inti singkat",q:"Keduanya menerima anarki. Mereka berpisah pada seberapa banyak kekuasaan yang dibutuhkan untuk bertahan.",qb:"",
+x:"Realisme defensif sulit menjelaskan ekspansi; realisme ofensif sulit menjelaskan mengapa banyak negara berhenti sebelum mencapai kekuasaan maksimum."},
+{n:"Realisme Neoklasik",t:"realist",tag:"Tekanan sistem menyiapkan panggung, tetapi harus melewati **filter domestik** sebelum menjadi kebijakan.",
+th:"Gideon Rose, Randall Schweller, Fareed Zakaria, William Wohlforth, Norrin Ripsman, Jeffrey Taliaferro, Steven Lobell",w:"“Neoclassical Realism and Theories of Foreign Policy” (Rose, 1998); Neoclassical Realist Theory of International Politics (2016)",e:"1990-an dan seterusnya",
+a:["**Kekuasaan relatif** suatu negara menetapkan batas umum kebijakan luar negerinya.","Tekanan sistemik bekerja melalui **variabel perantara** di tingkat domestik.","Persepsi pemimpin, institusi, dan **kapasitas negara** dapat menyebabkan reaksi berlebihan atau kurang.","Ini adalah teori **politik luar negeri**, bukan teori tentang hasil internasional secara keseluruhan."],
+f:["Kekuasaan relatif","Filter domestik: persepsi, budaya strategis, institusi, hubungan negara-masyarakat","Politik luar negeri"],
+k:["Variabel Perantara","Underbalancing","Kekuatan Negara","Citra Pemimpin","Budaya Strategis"],
+ql:"Inti singkat",q:"Kekuasaan menentukan apa yang bisa dilakukan negara; politik domestik menentukan apa yang benar-benar dilakukannya.",qb:"",
+x:"Kritikus seperti Legro dan Moravcsik (“Is Anybody Still a Realist?”, 1999) menilai penambahan variabel domestik membuat realisme kurang presisi dan lebih sulit diuji."},
+{n:"Liberalisme",t:"liberal",tag:"Kerja sama, perdagangan, dan hukum dapat mewujudkan **perdamaian abadi** di antara negara.",
+th:"John Locke, Immanuel Kant, Adam Smith, Woodrow Wilson, Norman Angell",w:"Perpetual Peace (Kant, 1795); The Great Illusion (Angell, 1910); Fourteen Points (1918)",e:"Berakar dari Pencerahan; idealisme setelah 1919",
+a:["Manusia itu **rasional** dan mampu berkemajuan serta bekerja sama.","Individu, kelompok, dan perusahaan juga penting, **bukan hanya negara**.","**Perdagangan bebas** dan ikatan ekonomi menaikkan biaya perang.","Hukum internasional dan lembaga seperti **Liga Bangsa-Bangsa** dapat mengelola konflik."],
+f:["Demokrasi","Saling ketergantungan ekonomi","Organisasi internasional","Perdamaian (segitiga perdamaian Kant)"],
+k:["Keamanan Kolektif","Perdagangan Bebas","Penentuan Nasib Sendiri","Supremasi Hukum","Liga Bangsa-Bangsa"],
+ql:"Kutipan klasik",q:"“Dunia harus dibuat aman bagi demokrasi.”",qb:"Woodrow Wilson, 1917",
+x:"Idealisme disalahkan atas runtuhnya Liga Bangsa-Bangsa dan jalan menuju Perang Dunia II, tuduhan yang dipimpin E. H. Carr pada 1939."},
+{n:"Institusionalisme Neoliberal",t:"liberal",tag:"Bahkan di bawah anarki, **institusi** membantu negara yang mementingkan diri sendiri untuk bekerja sama.",
+th:"Robert Keohane, Joseph Nye, Robert Axelrod, Lisa Martin",w:"After Hegemony (Keohane, 1984); The Evolution of Cooperation (Axelrod, 1984)",e:"1980-an dan seterusnya",
+a:["Menerima **anarki** dan negara rasional yang mementingkan diri, seperti neorealisme.","Negara terutama peduli pada **keuntungan absolut**, bukan keuntungan relatif.","Institusi menurunkan **biaya transaksi**, berbagi informasi, dan mengurangi kecurangan.","Interaksi berulang, atau **bayangan masa depan**, membuat kerja sama menjadi rasional."],
+f:["Anarki dan negara yang mementingkan diri","Institusi menurunkan biaya transaksi","Bayangan masa depan","Kerja sama timbal balik"],
+k:["Keuntungan Absolut","Rezim","Biaya Transaksi","Resiprositas","Tit-for-Tat"],
+ql:"Inti singkat",q:"Institusi tidak mengakhiri anarki; mereka membuat kerja sama lebih murah dan kecurangan lebih mahal.",qb:"",
+x:"Joseph Grieco (1988) berpendapat negara takut pada keuntungan relatif, dan Mearsheimer menyebut institusi sebagai “janji palsu” (1994)."},
+{n:"Teori Perdamaian Demokratis",t:"liberal",tag:"Negara demokrasi yang mapan **jarang, bahkan hampir tidak pernah,** berperang satu sama lain.",
+th:"Immanuel Kant, Michael Doyle, Bruce Russett, John Oneal, Rudolph Rummel",w:"“Kant, Liberal Legacies, and Foreign Affairs” (Doyle, 1983); Grasping the Democratic Peace (Russett, 1993)",e:"1980-an dan seterusnya",
+a:["Klaim ini bersifat **diadik**: demokrasi tidak cinta damai secara umum, tetapi jarang saling berperang.","Logika **normatif**: kebiasaan berkompromi di dalam negeri terbawa ke urusan luar negeri.","Logika **institusional**: pemilu, parlemen, dan pers bebas menahan pemimpin.","**Perdagangan** dan keanggotaan bersama dalam organisasi internasional memperkuat perdamaian."],
+f:["Norma dan institusi demokratis","Audience costs, perdagangan, norma bersama","Perdamaian diadik: demokrasi jarang saling berperang"],
+k:["Perdamaian Diadik","Zona Damai Liberal","Audience Costs","Norma Bersama"],
+ql:"Kutipan klasik",q:"“Tidak adanya perang antarnegara demokrasi adalah hal yang paling mendekati hukum empiris dalam hubungan internasional.”",qb:"Jack Levy, 1988",
+x:"Hasilnya bergantung pada cara “demokrasi” dan “perang” didefinisikan, dan aliansi Perang Dingin mungkin menjelaskan sebagian pola tersebut."},
+{n:"Saling Ketergantungan Kompleks",t:"liberal",tag:"Di dunia yang terhubung, **banyak saluran** mengaitkan masyarakat dan kekuatan militer kehilangan peran sentralnya.",
+th:"Robert Keohane dan Joseph Nye",w:"Power and Interdependence (1977); Bound to Lead (Nye, 1990)",e:"1970-an dan seterusnya",
+a:["**Banyak saluran** menghubungkan masyarakat: antarnegara, transpemerintah, dan transnasional.","**Tidak ada hierarki isu:** perdagangan, energi, dan lingkungan bisa menyaingi keamanan militer.","**Kekuatan militer** berperan kecil di antara negara yang saling bergantung erat.","Ketergantungan punya dua wajah: **sensitivitas** (biaya cepat) dan **kerentanan** (biaya yang bertahan)."],
+f:["Saluran antarnegara: pemerintah","Saluran transpemerintah: kementerian","Saluran transnasional: perusahaan, LSM"],
+k:["Sensitivitas","Kerentanan","Aktor Transnasional","Issue Linkage","Soft Power"],
+ql:"Inti singkat",q:"Ketika ekonomi saling terikat, perang menjadi terlalu mahal untuk dijadikan pilihan pertama.",qb:"",
+x:"Teori ini lebih cocok untuk hubungan antarekonomi maju dibandingkan kawasan yang masih didominasi kekuatan militer dan sengketa wilayah."},
+{n:"Mazhab Inggris (English School)",t:"media",tag:"Negara membentuk **masyarakat internasional** yang diikat aturan bersama, meski tanpa pemerintah dunia.",
+th:"Martin Wight, Hedley Bull, Herbert Butterfield, Adam Watson, Barry Buzan",w:"The Anarchical Society (Bull, 1977); International Theory: The Three Traditions (Wight, 1991)",e:"British Committee sejak 1959",
+a:["Anarki tidak berarti **kekacauan**; negara dapat membentuk suatu masyarakat.","Ketertiban bertumpu pada lima institusi: **diplomasi, hukum internasional, keseimbangan kekuatan, perang, dan pengelolaan kekuatan besar**.","Ini adalah **jalan tengah** antara realisme dan idealisme liberal.","**Pluralis** menekankan kedaulatan dan ketertiban; **solidaris** menekankan nilai bersama dan hak asasi manusia."],
+f:["Sistem internasional: negara yang saling berhubungan","Masyarakat internasional: aturan dan institusi bersama","Masyarakat dunia: individu dan umat manusia"],
+k:["Masyarakat Internasional","Pluralisme","Solidarisme","Ketertiban vs Keadilan","Via Media"],
+ql:"Gagasan kunci",q:"Anarki itu nyata, tetapi masyarakat juga nyata: negara mengikuti aturan karena mereka berbagi kepentingan pada ketertiban.",qb:"",
+x:"Metodenya longgar dan sulit diuji, dan gagasan masyarakat internasionalnya sering disebut Eurosentris."},
+{n:"Konstruktivisme",t:"social",tag:"Politik dunia **dikonstruksi secara sosial** melalui gagasan, identitas, dan norma.",
+th:"Alexander Wendt, Nicholas Onuf, Peter Katzenstein, Martha Finnemore, Kathryn Sikkink",w:"World of Our Making (Onuf, 1989); “Anarchy is What States Make of It” (Wendt, 1992)",e:"Akhir 1980-an dan seterusnya",
+a:["Struktur itu **sosial** sekaligus material; makna membentuk cara kekuasaan dibaca.","**Identitas menentukan kepentingan:** apa yang diinginkan negara bergantung pada siapa dirinya menurut dirinya.","Agen dan struktur **saling membentuk** (konstitusi bersama).","**Norma berubah** seiring waktu melalui norm entrepreneurs dan siklus hidup norma."],
+f:["Identitas","Kepentingan","Tindakan","Norma, yang kembali membentuk identitas"],
+k:["Identitas","Norma","Intersubjektivitas","Siklus Hidup Norma","Logika Kepatutan"],
+ql:"Kutipan klasik",q:"“Anarki adalah apa yang negara buat darinya.”",qb:"Alexander Wendt, 1992",
+x:"Teori ini menjelaskan perubahan dengan baik setelah terjadi tetapi sulit memprediksi, dan para ahli berbeda pendapat tentang seberapa besar kekuatan material masih berpengaruh."},
+{n:"Marxisme",t:"critical",tag:"Politik dunia mencerminkan **perjuangan kelas** dan penyebaran global kapitalisme.",
+th:"Karl Marx, Friedrich Engels, Vladimir Lenin, Rosa Luxemburg, Antonio Gramsci",w:"The Communist Manifesto (1848); Imperialism, the Highest Stage of Capitalism (Lenin, 1917)",e:"Berakar pada abad ke-19",
+a:["**Basis ekonomi** membentuk politik, hukum, dan gagasan (suprastruktur).","**Kelas**, bukan negara, adalah unit analisis utama.","Kapitalisme berekspansi ke luar negeri untuk mencari **pasar, bahan baku, dan keuntungan**.","Lenin mengaitkan **imperialisme** dan perang kekuatan besar dengan kapitalisme monopoli."],
+f:["Basis ekonomi: alat dan hubungan produksi","Suprastruktur: negara, hukum, gagasan, budaya"],
+k:["Materialisme Historis","Perjuangan Kelas","Imperialisme","Hegemoni (Gramsci)"],
+ql:"Kutipan klasik",q:"“Sejarah seluruh masyarakat yang ada hingga kini adalah sejarah perjuangan kelas.”",qb:"Marx dan Engels, 1848",
+x:"Teori ini meremehkan nasionalisme dan negara, dan ramalannya tentang runtuhnya kapitalisme belum terbukti."},
+{n:"Dependensi dan Sistem-Dunia",t:"critical",tag:"Kemiskinan di pinggiran dihasilkan oleh **ekonomi global yang timpang**, bukan oleh kurangnya modernitas.",
+th:"Raúl Prebisch, Andre Gunder Frank, Fernando Henrique Cardoso, Immanuel Wallerstein, Samir Amin",w:"“The Development of Underdevelopment” (Frank, 1966); The Modern World-System (Wallerstein, 1974)",e:"1950-an sampai 1970-an",
+a:["Ekonomi dunia terbelah menjadi **inti (core)** yang kaya dan **pinggiran (periphery)** yang miskin; Wallerstein menambahkan **semi-pinggiran**.","Surplus mengalir dari pinggiran ke inti melalui **pertukaran tidak setara**.","Pinggiran mengekspor barang mentah dan mengimpor barang manufaktur mahal (**tesis Prebisch-Singer**).","Keluar dari ketergantungan butuh strategi seperti **substitusi impor**."],
+f:["Pinggiran: barang mentah","Semi-pinggiran","Inti: surplus mengalir ke inti"],
+k:["Inti (Core)","Pinggiran (Periphery)","Semi-pinggiran","Pertukaran Tidak Setara","Substitusi Impor"],
+ql:"Inti singkat",q:"Keterbelakangan bukan titik awal; ia adalah posisi di dalam ekonomi dunia.",qb:"",
+x:"Kebangkitan ekonomi Asia Timur yang berorientasi ekspor menantang klaim bahwa pinggiran tidak bisa naik kelas."},
+{n:"Teori Kritis",t:"critical",tag:"Teori tidak pernah netral; ia harus **membongkar kekuasaan** dan mengarah pada emansipasi.",
+th:"Robert Cox, Andrew Linklater, Stephen Gill; akar Mazhab Frankfurt pada Horkheimer dan Habermas",w:"“Social Forces, States and World Orders” (Cox, 1981); The Transformation of Political Community (Linklater, 1998)",e:"1980-an dan seterusnya",
+a:["Pengetahuan melayani kepentingan; teori arus utama diam-diam **membela tatanan yang ada**.","**Teori pemecah masalah** menerima dunia apa adanya; **teori kritis** bertanya bagaimana dunia itu terbentuk.","Tatanan dunia bertumpu pada keselarasan **gagasan, kapabilitas material, dan institusi**.","Tujuannya adalah **emansipasi**: menyingkirkan batas-batas tidak adil pada kebebasan manusia."],
+f:["Kapabilitas material","Gagasan","Institusi","Tatanan dunia (struktur historis Cox)"],
+k:["Emansipasi","Hegemoni","Struktur Historis","Teori Pemecah Masalah"],
+ql:"Kutipan klasik",q:"“Teori selalu untuk seseorang dan untuk suatu tujuan.”",qb:"Robert Cox, 1981",
+x:"Teori ini kuat dalam kritik tetapi minim panduan kebijakan praktis, dan gagasan emansipasinya masih kabur."},
+{n:"Feminisme dalam HI",t:"critical",tag:"Gender membentuk politik dunia, dan bertanya **di mana perempuan berada** mengubah apa yang dapat dilihat HI.",
+th:"J. Ann Tickner, Cynthia Enloe, Jean Bethke Elshtain, V. Spike Peterson, Christine Sylvester",w:"Bananas, Beaches and Bases (Enloe, 1989); Gender in International Relations (Tickner, 1992)",e:"Akhir 1980-an dan seterusnya",
+a:["Gagasan inti HI seperti kekuasaan, keamanan, dan kedaulatan bertumpu pada **asumsi maskulin**.","Peran perempuan dalam perang, tenaga kerja, dan diplomasi sering **terabaikan** dalam analisis.","Keamanan harus mencakup **keamanan manusia**: bebas dari kekerasan dan kekurangan.","Gender adalah **konstruksi sosial** yang membentuk cara negara mendefinisikan kekuatan dan ancaman."],
+f:["Aliran liberal: kesetaraan hak dan inklusi","Aliran standpoint: pengalaman perempuan","Aliran pascastruktural: bahasa yang bergender"],
+k:["Lensa Gender","Keamanan Manusia","UNSCR 1325 (2000)","Yang Personal adalah Internasional"],
+ql:"Pertanyaan klasik",q:"“Di mana para perempuan?”",qb:"Cynthia Enloe",
+x:"Ilmuwan arus utama menilai feminisme tidak menawarkan satu teori perilaku negara yang dapat diuji, dan kaum feminis sendiri berdebat soal esensialisme."},
+{n:"Pascakolonialisme",t:"critical",tag:"HI lama diceritakan dari sudut pandang Barat; pascakolonialisme menghadirkan **suara bangsa terjajah**.",
+th:"Edward Said, Frantz Fanon, Gayatri Spivak, Homi Bhabha",w:"The Wretched of the Earth (Fanon, 1961); Orientalism (Said, 1978); “Can the Subaltern Speak?” (1988)",e:"1960-an dan seterusnya",
+a:["Sejarah kolonial masih membentuk **batas wilayah, ekonomi, dan identitas** hingga kini.","Tulisan Barat membangun citra “Timur” sebagai terbelakang dan Barat sebagai rasional: **Orientalisme**.","HI arus utama bersifat **Eurosentris** dan mengabaikan Global South.","**Subaltern**, mereka yang disingkirkan dari kekuasaan, harus didengar dengan cara mereka sendiri."],
+f:["Barat: rasional, modern (sang Diri)","“Timur”: terbelakang, eksotis (sang Liyan)","Tugas: biarkan Global South berbicara untuk dirinya sendiri"],
+k:["Orientalisme","Subaltern","Eurosentrisme","Hibriditas","Diri dan Liyan"],
+ql:"Inti singkat",q:"Siapa yang menceritakan kisah politik dunia menentukan pengalaman siapa yang dianggap penting.",qb:"",
+x:"Kuat sebagai kritik tetapi memberi panduan kebijakan yang terbatas, dan konsep-konsepnya bisa terlalu abstrak."},
+{n:"Teori Sekuritisasi",t:"security",tag:"Suatu isu menjadi ancaman keamanan ketika ia **berhasil dinyatakan** sebagai ancaman.",
+th:"Ole Wæver, Barry Buzan, Jaap de Wilde; dikenal sebagai Mazhab Kopenhagen",w:"“Securitization and Desecuritization” (Wæver, 1995); Security: A New Framework for Analysis (1998)",e:"1990-an dan seterusnya",
+a:["Keamanan adalah **tindak tutur (speech act)**: menyebut ancaman eksistensial memindahkan isu keluar dari politik biasa.","**Aktor yang mensekuritisasi** menyatakan suatu **objek rujukan** sedang terancam.","Berhasil hanya jika **audiens menerima** klaim tersebut.","Keamanan mencakup **lima sektor**: militer, politik, ekonomi, sosietal, dan lingkungan."],
+f:["Aktor","Tindak tutur","Audiens","Diterima: tindakan luar biasa"],
+k:["Speech Act","Objek Rujukan","Tindakan Luar Biasa","Desekuritisasi","Kompleks Keamanan"],
+ql:"Inti singkat",q:"Ancaman tidak hanya ditemukan; ia juga dinyatakan dan diterima.",qb:"",
+x:"Teori ini berfokus pada kata-kata dan mengabaikan citra serta praktik sehari-hari, dan gagasan “politik normal” paling cocok untuk demokrasi liberal."}
+];
+
+const bold=s=>s.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-");
+const card=d=>`<article class="th" id="${slug(d.n)}" data-t="${d.t}" data-n="${d.n.toLowerCase()}" style="--c:var(--${d.t})">
+<span class="pill">${LABEL[d.t]}</span><h2>${d.n}</h2><p class="tag">${bold(d.tag)}</p>
+<div class="meta"><div><b>Tokoh kunci</b>${d.th}</div><div><b>Karya utama</b>${d.w}</div><div><b>Era</b>${d.e}</div></div>
+<div class="two"><div><h3>Asumsi inti</h3><ol class="as">${d.a.map(x=>`<li>${bold(x)}</li>`).join("")}</ol></div>
+<div><h3>Bagaimana teori ini bekerja</h3><div class="flow">${d.f.map(x=>`<div>${x}</div>`).join("<i>▼</i>")}</div></div></div>
+<div class="chips"><h3>Konsep kunci</h3><ul>${d.k.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+<div class="qw"><div class="q"><small>${d.ql}</small><p>${d.q}</p>${d.qb?`<cite>${d.qb}</cite>`:""}</div><div class="w"><small>Titik lemah</small>${d.x}</div></div>
+</article>`;
+document.getElementById("list").innerHTML=THEORIES.map(card).join("");
+
+const fb=document.getElementById("filters"),cards=[...document.querySelectorAll("article.th")],q=document.getElementById("q");
+let cur="all";
+fb.innerHTML=Object.entries(GROUPS).map(([k,v])=>`<button data-k="${k}" aria-pressed="${k==="all"}" ${k!=="all"?`style="--c:var(--${k})"`:""}>${v}</button>`).join("");
+function apply(){const s=q.value.trim().toLowerCase();
+cards.forEach(c=>c.classList.toggle("hide",!((cur==="all"||c.dataset.t===cur)&&(!s||c.dataset.n.includes(s)))));
+fb.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===cur));}
+fb.addEventListener("click",e=>{const b=e.target.closest("button");if(b){cur=b.dataset.k;apply();}});
+q.addEventListener("input",apply);
+</script>
+</body>
+</html>
